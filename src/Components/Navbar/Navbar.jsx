@@ -8,14 +8,17 @@ import notification_icon from '../../assets/notification.png'
 import profile_icon from '../../assets/jack.jpg'
 import { Link } from 'react-router-dom'
 
-const Navbar = ({ setSidebar }) => {
+const Navbar = ({ setSidebar,currentPath }) => {
   const toggleSidebar = () => {
     setSidebar(prev => !prev); // Toggle sidebar state
   };
+  const isHomeRoute = currentPath === '/';
   return (
     <nav className='flex-div'>
       <div className='flex-div nav-left'>
-        <img className='menu-icon'  onClick={toggleSidebar} src={menu_icon} alt="" />
+        {isHomeRoute &&(
+          <img className='menu-icon'  onClick={toggleSidebar} src={menu_icon} alt="" />
+        )}
         <Link to='/'> 
           <img className='logo' src={logo} alt="" />  
         </Link>
