@@ -8,11 +8,7 @@ import tech from '../../assets/tech.png'
 import music from '../../assets/music.png'
 import blogs from '../../assets/blogs.png'
 import news from '../../assets/news.png'
-import jack from '../../assets/jack.png'
-import simon from '../../assets/simon.png'
-import tom from '../../assets/tom.png'
-import megan from '../../assets/megan.png'
-import cameron from '../../assets/cameron.png'
+import jack from '../../assets/jack.jpg'
 const Sidebar = ({ sidebar,category,setCategory }) => {
   return (  
     <div className={`sidebar ${sidebar?"" : "small-sidebar"}`}>
@@ -64,25 +60,25 @@ const Sidebar = ({ sidebar,category,setCategory }) => {
             </p>
         </div>
         <div className="side-link" >
-            <img src={simon} alt="" />
+            <img src={jack} alt="" />
             <p>
                 MrBeast
             </p>
         </div>
         <div className="side-link">
-            <img src={tom} alt="" />
+            <img src={jack} alt="" />
             <p>
                 Justin Bieber
             </p>
         </div>
         <div className="side-link">
-            <img src={megan} alt="" />
+            <img src={jack} alt="" />
             <p>
                 5-mints Craft
             </p>
         </div>
         <div className="side-link" >
-            <img src={cameron} alt="" />
+            <img src={jack} alt="" />
             <p>
                 Nas Daily 
             </p>

@@ -1,11 +1,11 @@
 import './Navbar.css'
 import menu_icon from '../../assets/menu.png'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.svg'
 import search_icon from '../../assets/search.png'
 import upload_icon from '../../assets/upload.png'
 import more_icon from '../../assets/more.png'
 import notification_icon from '../../assets/notification.png'
-import profile_icon from '../../assets/jack.png'
+import profile_icon from '../../assets/jack.jpg'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({ setSidebar }) => {
@@ -15,7 +15,7 @@ const Navbar = ({ setSidebar }) => {
   return (
     <nav className='flex-div'>
       <div className='flex-div nav-left'>
-        <img className='menu-icon' onClick={toggleSidebar} src={menu_icon} alt="" />
+        <img className='menu-icon'  onClick={toggleSidebar} src={menu_icon} alt="" />
         <Link to='/'> 
           <img className='logo' src={logo} alt="" />  
         </Link>
